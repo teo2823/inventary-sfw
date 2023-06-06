@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main .navbar {
+    width: 20%;
+    height: 100vh;
+    background-color: rgb(41, 40, 40);
+}
+
+.main .navbar__container {
+    padding: 0 20px;
+    color: white;
+}
+
+.main .navbar__container ul {
+    list-style: none;
+}
+
+.main .navbar__profile {
+    padding-top: 20px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.main .navbar__profile img {
+    width: 50px;
+    margin-right: 10px;
+    filter: invert(100%);
+}
+
+.main .navbar__profile-name {
+    font-weight: 500;
+}
+
+.main .navbar__profile-rol {
+    font-weight: 200;
+}
+
+.main .navbar__item {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
