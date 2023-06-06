@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/25e47d7a75.js" crossorigin="anonymous"></script>
+    <title>Inventario</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__logo"><span class="first-logo">Logo</span>Company</h1>
+            <select name="select" class="header__select">
+                <option value="1" selected >Admin</option>
+                <option value="2">User</option>
+                <option value="3">User</option>
+            </select>
+        </div>
+    </header>
+    <main class="main">
+        <section class="navbar">
+            <nav class="navbar__container">
+                <div class="navbar__profile">
+                    <img src="./assets/no-profile.png" alt="">
+                    <div class="navbar__profile-info">
+                        <h3 class="navbar__profile-name">Example Name</h3>
+                        <p class="navbar__profile-rol">Administrador</p>
+                    </div>
+                </div>
+                <ul><a href="../index.html">
+                        <li class="navbar__item">Home</li>
+                    </a>
+                    <li class="navbar__item">Sales</li>
+                    <li class="navbar__item">Products</li>
+                    <a href="/inventary/inventary.html">
+                        <li class="navbar__item">Inventory</li>
+                    </a>
+                    <li class="navbar__item">Setting</li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="dashboard">
+            <div class="dashboard__header">
+                <h2 class="dashboard__title">Inventory</h2>
+                <div class="dashboard__buttons">
+                    <button class="dashboard__button"><i class="fa-solid fa-plus"></i>New</button>
+                    <button class="dashboard__button"><i class="fa-solid fa-pen-to-square"></i>Edit</button>
+                    <button class="dashboard__button"><i class="fa-solid fa-trash"></i>Delate</button>
+                </div>
+            </div>
+            <div class="dashboard__main">
+
+                <div class="panel">
+                    <div class="panel__container">
+                        <div class="panel__header">
+                            <h3 class="panel__title">
+                                Info
+                            </h3>
+                        </div>
+                        <div class="panel__form">
+                            <div class="form-group">
+                                <label for="Departament">Departament</label>
+                                <select name="Departament" id="Departament">
+                                    <option value="1" selected>Office</option>
+                                    <option value="2" selected>example</option>
+                                    <option value="3" selected>example</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="
+                                sku">SKU</label>
+                                <input type="number" name="sku" id="sku">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="
+                                name">Name</label>
+                                <input type="text" name="name" id="name">
+                            </div>
+
+                            <div class="form__sells">
+                                <div class="form-group">
+                                    <label for="
+                                    sell-in">Sell In</label>
+                                    <input type="number" name="sell-in" id="sell-in">
+                                </div>
+    
+                                <div class="form-group">
+                                    <label for="
+                                    sell-out">Sell Out</label>
+                                    <input type="number" name="sell-out" id="sell-out">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="
+                                qty">QTY</label>
+                                <input type="number" name="qty" id="qty" min="0">
+                            </div>
+
+                            <div class="button__form">
+                                <button type="submit">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="panell">
+                    <div class="panell__container">
+                        <div class="panell__header">
+                            <label for="search">Search:</label>
+                            <input type="text">
+                        </div>
+                        <div class="panell__table">
+                            <table>
+                                <tr>
+                                    <th>DEPARTAMENT</td>
+                                    <th>SKU</td>
+                                    <th>NAME</td>
+                                    <th>SELL IN</td>
+                                    <th>SELL OUT</td>
+                                    <th>QTY</td>
+                                </tr>
+                                <tr>
+                                    <td>Example</td>
+                                    <td>2790</td>
+                                    <td>Example</td>
+                                    <td>10000$</td>
+                                    <td>599$</td>
+                                    <td>572</td>
+                                </tr>
+                                <tr>
+                                    <td>Example</td>
+                                    <td>73930</td>
+                                    <td>Example</td>
+                                    <td>1239$</td>
+                                    <td>300$</td>
+                                    <td>140</td>
+                                </tr>
+                                <tr>
+                                    <td>Example</td>
+                                    <td>2779</td>
+                                    <td>Example</td>
+                                    <td>1829$</td>
+                                    <td>1200$</td>
+                                    <td>345</td>
+                                </tr>
+                                <tr>
+                                    <td>Example</td>
+                                    <td>2778</td>
+                                    <td>Example</td>
+                                    <td>1289$</td>
+                                    <td>200$</td>
+                                    <td>676</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    
+
+</body>
+</html>

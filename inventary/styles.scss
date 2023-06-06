@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.header {
+    width: 100%;
+    background-color: rgb(116, 19, 19);
+    color: white;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 20px;
+    }
+
+    
+    &__logo {
+        span {
+            font-weight: 700;
+            margin-right: 5px;
+        }
+        font-size: 1.8em;
+        font-weight: 200;
+    }
+
+    &__select {
+        border-radius: 4px;
+        height: 30px;
+        width: 70px;
+    }
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    .navbar {
+        width: 20%;
+        height: 91.7vh;
+        background-color: rgb(41, 40, 40);
+
+        &__container {
+            padding: 0 20px;
+            color: white;
+            ul {
+                list-style: none;
+            }
+        }
+
+        &__profile{
+            padding-top: 20px;
+            display: flex;
+            margin-bottom: 20px;
+
+            img {
+                width: 50px;
+                margin-right: 10px;
+
+                filter: invert(100%)
+            }
+            &-name {
+                font-weight: 500;
+            }
+
+            &-rol {
+                font-weight: 200;
+            }
+        }
+
+        &__item {
+            font-size: 1.5em;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+    }
+
+    .dashboard {
+        background-color: rgb(238, 238, 238);
+        width: 80%;
+        &__header {
+            width: 100;
+            display: flex;
+            padding: 15px 20px;
+            justify-content: space-between;
+        }
+
+        &__title {
+            font-size: 2em;
+
+        }
+
+        &__buttons {
+            display: flex;
+            gap: 20px;
+
+            .dashboard__button {
+                border-radius: 7px;
+                width: 100px;
+                border: none;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+
+                &:first-child{
+                    background-color: rgb(74, 123, 219);
+                }
+                &:nth-child(2){
+                    background-color: rgb(25, 13, 153);
+                }
+                &:last-child {
+                    background-color: rgb(174, 19, 19);
+                }
+            }
+        }
+
+        &__main {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+
+
+            .panel {
+                margin: 20px;
+                width: 40%;
+                border-radius: 8px;
+                border: none;
+                height: 440px;
+                background-color: rgb(255, 255, 255);
+                box-shadow: 0px 0px 44px -3px rgba(0,0,0,0.1);
+                &__container {
+                    padding: 10px 20px;
+                }
+
+                &__title {
+                    font-size: 1.2em;
+                    font-weight: 500;
+                }
+
+                &__form {
+                    width: 100%;
+                    
+                    .form-group {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 15px;
+
+                        select {
+                            height: 30px;
+                            border: 1px solid rgb(208, 208, 208);
+                            border-radius: 8px;
+                        }
+
+                        label {
+                            width: 20%;
+                            font-size: 1em;
+                            font-weight: bold;
+                            margin-bottom: 4px;
+                        }
+                        input {
+                            width: 100%;
+                            height: 30px;
+                            border: 1px solid rgb(208, 208, 208);
+                            border-radius: 8px;
+                        }
+                    }
+
+                    .form__sells {
+                        display: flex;
+                        gap: 20px;
+                        label {
+                            width: 100%;
+                        }
+                    }
+
+                    .button__form {
+                        width: 100%;
+                        display: flex;
+                        justify-content: end;
+                        height: 35px;
+
+                        button {
+                            color: white;
+                            border-radius: 7px;
+                            width: 100px;
+                            border: none;
+                            height: 100%;
+                            background-color: rgb(74, 123, 219);
+                        }
+                    }
+                }
+
+
+            }
+
+            .panell{
+                margin: 20px;
+                width: 60%;
+                border-radius: 8px;
+                border: none;
+                height: 440px;
+                background-color: rgb(255, 255, 255);
+                box-shadow: 0px 0px 44px -3px rgba(0,0,0,0.1);
+                &__container {
+                    padding: 20px;
+                }
+
+                &__header {
+                    display: flex;
+                    width: 100%;
+                    gap: 10px;
+
+                    label {
+                        font-size: 1.2em;
+                        font-weight: 500;
+                    }
+                    input {
+                        width: 100%;
+                        border: 1px solid rgb(208, 208, 208);
+                        border-radius: 8px;
+                    }
+                }
+
+                &__table {
+                    margin-top: 10px;
+                    table {
+                        width: 100%;
+                        
+                        th {
+                            font-size: 1.3em;
+                            font-weight: bold;
+                            text-align: start;
+                            padding-bottom: 20px;
+                        }
+
+                        td {
+                            font-size: 1.2em;
+                            padding-bottom: 10px;
+                        }
+                    }
+                } 
+            }
+
+        }
+    }
+
+    
+}

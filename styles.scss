@@ -1,0 +1,58 @@
+body {
+    font-size: 16px;
+
+    .header{
+        background-color: rgb(143, 27, 27)
+        ;
+        .header__logo {
+            color: antiquewhite;
+            font-size: 1.5em;
+        }
+    }
+
+    .main{
+        width: 100%;
+        .navbar {
+            background-color: rgb(80, 12, 12);
+            width: 20%;
+            height: 87.2vh;
+            align-items: start;
+
+            &__container {
+                margin-top: 30px;
+            }
+
+            ul {
+                list-style: none;
+            }
+            &__item {
+                font-size: 1.5em;
+                color: white;
+                margin-bottom: 10px;
+                cursor: pointer;
+                i {
+                    font-size: 0.8em;
+                }
+
+                &:hover {
+                    color: rgb(140, 140, 140);
+                }
+            }
+
+        }
+
+        .inventario {
+            width: 80%;
+            background-color: rgb(92, 92, 92);
+
+            &__header {
+                color: rgb(251, 251, 251);
+            }
+
+            &__container {
+                padding: 10px 40px;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,49 @@
+body {
+  font-size: 16px;
+}
+body .header {
+  background-color: rgb(143, 27, 27);
+}
+body .header .header__logo {
+  color: antiquewhite;
+  font-size: 1.5em;
+}
+body .main {
+  width: 100%;
+}
+body .main .navbar {
+  background-color: rgb(80, 12, 12);
+  width: 20%;
+  height: 87.2vh;
+  align-items: start;
+}
+body .main .navbar__container {
+  margin-top: 30px;
+}
+body .main .navbar ul {
+  list-style: none;
+}
+body .main .navbar__item {
+  font-size: 1.5em;
+  color: white;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+body .main .navbar__item i {
+  font-size: 0.8em;
+}
+body .main .navbar__item:hover {
+  color: rgb(140, 140, 140);
+}
+body .main .inventario {
+  width: 80%;
+  background-color: rgb(92, 92, 92);
+}
+body .main .inventario__header {
+  color: rgb(251, 251, 251);
+}
+body .main .inventario__container {
+  padding: 10px 40px;
+}
+
+/*# sourceMappingURL=style.css.map */
