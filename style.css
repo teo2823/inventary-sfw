@@ -23,20 +23,10 @@ body .main .navbar__container {
 body .main .navbar ul {
   list-style: none;
 }
-body .main .navbar__item {
-  font-size: 1.5em;
-  color: white;
-  margin-bottom: 10px;
-  cursor: pointer;
-}
-body .main .navbar__item i {
-  font-size: 0.8em;
-}
-body .main .navbar__item:hover {
-  color: rgb(140, 140, 140);
-}
+
 body .main .inventario {
   width: 80%;
+  height: 87.2vh;
   background-color: rgb(92, 92, 92);
 }
 body .main .inventario__header {

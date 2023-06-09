@@ -15,7 +15,7 @@ body {
         .navbar {
             background-color: rgb(80, 12, 12);
             width: 20%;
-            height: 87.2vh;
+            height: 100vh;
             align-items: start;
 
             &__container {
@@ -44,7 +44,6 @@ body {
         .inventario {
             width: 80%;
             background-color: rgb(92, 92, 92);
-
             &__header {
                 color: rgb(251, 251, 251);
             }
